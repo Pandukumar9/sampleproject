@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>  
+function validateform(){  
+var username=document.myform.username.value;  
+var password=document.myform.password.value;  
+  
+if (username==null || username==""){  
+  alert("username is required");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+</script>
+<style>
+  .clr1{
+  color: red;
+  }
+  
+  .clr2 {
+   color: blue;
+  }
+</style>
+</head>
+<body>
+
+<h2>User Login Form</h2>
+
+<form name="myform" method="post" action="abc.jsp" onsubmit="return validateform()" >  
+<label for="uname">Username: </label><input type="text" id="uname" name="username"><br/>  <br/>
+<label for="password">Password: </label> <input type="password" id="password" name="password"><br/>  
+<input type="submit" value="register">  
+</form>   
+<p> <div class="container">
+this is div secion
+</div>
+</p>
+<div class="clr1">
+   <div class="clr2"> 
+      <h2>helloo</h2>
+   </div>
+<div>
+
+</body>
+</html>
